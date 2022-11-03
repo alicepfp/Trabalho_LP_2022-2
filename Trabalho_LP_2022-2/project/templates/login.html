@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <title>Gestão RH</title>
+        <link rel="stylesheet" type="text/css" href="./static/login.css">
+</head>
+
+<body>
+
+	<h1 class="titulo-principal">Sistema de gestão de pessoas<h1>
+	<h2 class="titulo-secundario">Faça login</h2>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash">
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
+	<form action="/login" method="post">
+		<input class="preencher" type="text" name="usuario" placeholder="Usuário"><br>
+		<input class="preencher" type="password" name="senha" placeholder="Senha"><br>
+		<button class="input-botao">Login</button>
+	</form>
+</body>
+
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+	<title>Gestão RH</title>
+	<link rel="stylesheet" type="text/css" href="./static/index.css">
+</head>
+<body>
+	<header>
+		<h1 class="titulo-principal">Sistema de gestão de pessoas</h1>
+		<h3 class="texto-cabecalho">Seja bem vindo(a) {{user}}</h3>
+	</header>
+	<form action="/busca" method="post">
+		<input type="submit" name="buscar"  value="Buscar">
+	</form>
+	<form action="/cadastro" method="post">
+                <input type="submit" name="cadastrar-func" value="Cadastrar">
+        </form>
+	<form action="/alterar" method="post">
+                <input type="submit" name="alterar" value="Alterar Dados">
+	</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+	<title>Gestão RH</title>
+	<link rel="stylesheet" type="text/css" href="./static/search.css">
+</head>
+<body>
+	<header>
+		<h1 class="titulo-principal">Sistema de gestão de pessoas</h1>
+		<h2 class="titulo-secundario">Busca de funcionários</h2>
+		<h3 class="descricao-principal">Digite o nome do funcionário:</h3>
+	</header>
+	<form action="/funcionario" method="post">
+		<input type="text" name="employee_name" placeholder="Nome do funcionário"><br>
+		<input class="input-botao" type="submit" name="buscar" value="Buscar">
+	</form>
+</body>
+</html>

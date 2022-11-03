@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <title>Gestão RH</title>
+        <link rel="stylesheet" type="text/css" href="./static/register_user.css">
+</head>
+<body>
+        <header>
+                <h1 class="titulo-principal">Sistema de gestão de pessoas</h1>
+                <h2 class="titulo-secundario">Criação de login</h2>
+                <h2 class="descricao-principal">Insira suas informações</h2>
+        </header>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="flash">
+            {{ messages[0] }}. Vá para a <a href="{{ url_for('auth.login') }}">página de login</a>.
+        </div>
+        {% endif %}
+        {% endwith %}
+        <form action="/signup" method="post">
+                <input class="campo-preencher" type="text" name="Matricula-usuario" placeholder="Matrícula"><br>
+                <input class="campo-preencher" type="text" name="Nome-usuario" placeholder="Nome de usuário"><br>
+                <input class="campo-preencher" type="password" name="Senha" placeholder="Senha"><br>
+                <input class="input-botao" type="submit" value="Cadastrar">
+        </form>
+</body>
+</html>
+

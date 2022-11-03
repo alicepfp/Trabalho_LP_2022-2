@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <title>Gestão RH</title>
+        <link rel="stylesheet" type="text/css" href="./static/modify.css">
+</head>
+<body>
+	<header>
+		<h1 class="titulo-principal">Sistema de gestão de pessoas</h1>
+		<h2 class="titulo-secundario">Alteração de dados</h2>
+		<h3 class="descricao-principal">Alterando dados de {{nome}}</h3>
+	</header>
+	<form action="/alterado" method="post">
+		<input class="campo-preencher" type="text" name="Nome" placeholder="Nome completo"><br>
+                <input class="campo-preencher" type="text" name="Nascimento" placeholder="Data de nascimento"><br>
+                <input class="campo-preencher" type="text" name="CPF" placeholder="CPF"><br>
+                <input class="campo-preencher" type="text" name="CTPS" placeholder="CTPS"><br>
+                <input class="campo-preencher" type="text" name="Setor" placeholder="setor"><br>
+                <input class="campo-preencher" type="text" name="Cargo" placeholder="Cargo"><br>
+                <input class="campo-preencher" type="text" name="Matricula" placeholder="Matrícula"><br>
+                <input class="input-botao" type="submit" value="Alterar">
+        </form>
+</body>
+</html>
