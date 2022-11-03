@@ -1,6 +1,6 @@
 import sqlite3 
 
-conn =  conn = sqlite3.connect('/home/alice/Documentos/Trabalho_LP_2022-2/Teste_Trabalho/project/funcionario.db', check_same_thread=False )
+conn =  conn = sqlite3.connect('/home/alice/Documentos/Trabalho_LP_2022-2/Trabalho_LP_2022-2/project/funcionario.db', check_same_thread=False )
 
 def busca_altera_funcionario(buscaealtera):
     cur = conn.cursor()

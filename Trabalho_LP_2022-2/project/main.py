@@ -46,7 +46,7 @@ def funcionario():
         if request.form['buscar'] == 'Buscar':
             busca =request.form['employee_name']
             resultado = busca_funcionario(busca)
-            return render_template("list.html", paragrafo = '''João da silva, dihafoesiof, duhbsuibfus, fbusebfuoes, fineoshfbnusj, bfieubsukf, bfiebsfuksj''')
+            return render_template("list.html", paragrafo = '''João da silva, 3735035/0060, 09809184727, 25/10/1989, Aquático, Assistente ADM, 122041900''')
 
 #rota que realiza o cadastro de funcionarios no banco de dados 
 @main.route("/registrado", methods = ["GET","POST"])
